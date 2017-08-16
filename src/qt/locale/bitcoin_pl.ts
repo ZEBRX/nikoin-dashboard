@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About WINCOIN</source>
-        <translation>O WINCOIN</translation>
+        <source>About NIKoin</source>
+        <translation>O NIKoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;WINCOIN&lt;/b&gt; version</source>
-        <translation>Wersja &lt;b&gt;WINCOIN&lt;/b&gt;</translation>
+        <source>&lt;b&gt;NIKoin&lt;/b&gt; version</source>
+        <translation>Wersja &lt;b&gt;NIKoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,8 +34,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The WINCOIN developers</source>
-        <translation>Deweloperzy WINCOIN</translation>
+        <source>The NIKoin developers</source>
+        <translation>Deweloperzy NIKoin</translation>
     </message>
 </context>
 <context>
@@ -67,8 +67,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your WINCOIN addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Tutaj znajdują się twoje adresy WINCOIN do odbioru płatności. Możesz nadać oddzielne adresy dla każdego z wysyłających monety, żeby śledzić oddzielnie ich opłaty.</translation>
+        <source>These are your NIKoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Tutaj znajdują się twoje adresy NIKoin do odbioru płatności. Możesz nadać oddzielne adresy dla każdego z wysyłających monety, żeby śledzić oddzielnie ich opłaty.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,7 +82,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a WINCOIN address</source>
+        <source>Sign a message to prove you own a NIKoin address</source>
         <translation>Podpisz wiadomość aby dowieść, że ten adres jest twój</translation>
     </message>
     <message>
@@ -107,8 +107,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified WINCOIN address</source>
-        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana odpowiednim adresem WINCOIN.</translation>
+        <source>Verify a message to ensure it was signed with a specified NIKoin address</source>
+        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana odpowiednim adresem NIKoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your WINCOIN addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tutaj znajdują się Twoje adresy WINCOIN do wysyłania płatności. Zawsze sprawdzaj ilość i adres odbiorcy przed wysyłką monet.</translation>
+        <source>These are your NIKoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tutaj znajdują się Twoje adresy NIKoin do wysyłania płatności. Zawsze sprawdzaj ilość i adres odbiorcy przed wysyłką monet.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -275,8 +275,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>WINCOIN will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your wincoins from being stolen by malware infecting your computer.</source>
-        <translation>Program WINCOIN zamknie się aby dokończyć proces szyfrowania. Pamiętaj, że szyfrowanie portfela nie zabezpiecza w pełni Twoich wincoinów przed kradzieżą przez wirusy lub trojany mogące zainfekować Twój komputer.</translation>
+        <source>NIKoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your nikoins from being stolen by malware infecting your computer.</source>
+        <translation>Program NIKoin zamknie się aby dokończyć proces szyfrowania. Pamiętaj, że szyfrowanie portfela nie zabezpiecza w pełni Twoich nikoinów przed kradzieżą przez wirusy lub trojany mogące zainfekować Twój komputer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -374,8 +374,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about WINCOIN</source>
-        <translation>Pokaż informację o WINCOIN</translation>
+        <source>Show information about NIKoin</source>
+        <translation>Pokaż informację o NIKoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a WINCOIN address</source>
-        <translation>Wyślij monety na adres WINCOIN</translation>
+        <source>Send coins to a NIKoin address</source>
+        <translation>Wyślij monety na adres NIKoin</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for WINCOIN</source>
-        <translation>Zmienia opcje konfiguracji wincoina</translation>
+        <source>Modify configuration options for NIKoin</source>
+        <translation>Zmienia opcje konfiguracji nikoina</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,8 +455,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>WINCOIN</source>
-        <translation>WINCOIN</translation>
+        <source>NIKoin</source>
+        <translation>NIKoin</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About WINCOIN</source>
-        <translation>O WINCOIN</translation>
+        <source>&amp;About NIKoin</source>
+        <translation>O NIKoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your WINCOIN addresses to prove you own them</source>
+        <source>Sign messages with your NIKoin addresses to prove you own them</source>
         <translation>Podpisz wiadomości swoim adresem aby udowodnić jego posiadanie</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified WINCOIN addresses</source>
-        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana odpowiednim adresem WINCOIN.</translation>
+        <source>Verify messages to ensure they were signed with specified NIKoin addresses</source>
+        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana odpowiednim adresem NIKoin.</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,13 +536,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>WINCOIN client</source>
-        <translation>WINCOIN klient</translation>
+        <source>NIKoin client</source>
+        <translation>NIKoin klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to WINCOIN network</source>
-        <translation><numerusform>%n aktywne połączenie do sieci WINCOIN</numerusform><numerusform>%n aktywne połączenia do sieci WINCOIN</numerusform><numerusform>%n aktywnych połączeń do sieci WINCOIN</numerusform></translation>
+        <source>%n active connection(s) to NIKoin network</source>
+        <translation><numerusform>%n aktywne połączenie do sieci NIKoin</numerusform><numerusform>%n aktywne połączenia do sieci NIKoin</numerusform><numerusform>%n aktywnych połączeń do sieci NIKoin</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -607,7 +607,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+70"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
-        <translation>Transakcja przekracza limit. Możesz wysłać ją płacąc prowizję %1, która zostaje przekazana do węzłów, które ją prześlą i pomoże wspierać sieć WINCOIN. Czy chcesz zapłacić prowizję?</translation>
+        <translation>Transakcja przekracza limit. Możesz wysłać ją płacąc prowizję %1, która zostaje przekazana do węzłów, które ją prześlą i pomoże wspierać sieć NIKoin. Czy chcesz zapłacić prowizję?</translation>
     </message>
     <message>
         <location line="-140"/>
@@ -656,8 +656,8 @@ Adres: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid WINCOIN address or malformed URI parameters.</source>
-        <translation>URI nie może zostać przetworzony! Prawdopodobnie błędny adres WINCOIN bądź nieprawidłowe parametry URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid NIKoin address or malformed URI parameters.</source>
+        <translation>URI nie może zostać przetworzony! Prawdopodobnie błędny adres NIKoin bądź nieprawidłowe parametry URI.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -671,8 +671,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. WINCOIN can no longer continue safely and will quit.</source>
-        <translation>Błąd krytyczny. WINCOIN nie może kontynuować bezpiecznie więc zostanie zamknięty.</translation>
+        <source>A fatal error occurred. NIKoin can no longer continue safely and will quit.</source>
+        <translation>Błąd krytyczny. NIKoin nie może kontynuować bezpiecznie więc zostanie zamknięty.</translation>
     </message>
 </context>
 <context>
@@ -737,8 +737,8 @@ Adres: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid WINCOIN address.</source>
-        <translation>Wprowadzony adres &quot;%1&quot; nie jest poprawnym adresem WINCOIN.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid NIKoin address.</source>
+        <translation>Wprowadzony adres &quot;%1&quot; nie jest poprawnym adresem NIKoin.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Adres: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>WINCOIN-Qt</source>
-        <translation>WINCOIN-Qt</translation>
+        <source>NIKoin-Qt</source>
+        <translation>NIKoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -819,13 +819,13 @@ Adres: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start WINCOIN after logging in to the system.</source>
-        <translation>Automatycznie uruchamia WINCOIN po zalogowaniu do systemu.</translation>
+        <source>Automatically start NIKoin after logging in to the system.</source>
+        <translation>Automatycznie uruchamia NIKoin po zalogowaniu do systemu.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start WINCOIN on system login</source>
-        <translation>Uruchamiaj WINCOIN wraz z zalogowaniem do &amp;systemu</translation>
+        <source>&amp;Start NIKoin on system login</source>
+        <translation>Uruchamiaj NIKoin wraz z zalogowaniem do &amp;systemu</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -844,8 +844,8 @@ Adres: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the WINCOIN client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatycznie otwiera port klienta WINCOIN na routerze. Ta opcja dzieła tylko jeśli twój router wspiera UPnP i jest ono włączone.</translation>
+        <source>Automatically open the NIKoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatycznie otwiera port klienta NIKoin na routerze. Ta opcja dzieła tylko jeśli twój router wspiera UPnP i jest ono włączone.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -854,8 +854,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the WINCOIN network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Podłącz się do sieci WINCOIN przez proxy SOCKS (np. gdy łączysz się poprzez Tor&apos;a)</translation>
+        <source>Connect to the NIKoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Podłącz się do sieci NIKoin przez proxy SOCKS (np. gdy łączysz się poprzez Tor&apos;a)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -929,8 +929,8 @@ Adres: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting WINCOIN.</source>
-        <translation>Można tu ustawić język interfejsu uzytkownika. Żeby ustawienie przyniosło skutek trzeba uruchomić ponownie WINCOIN.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting NIKoin.</source>
+        <translation>Można tu ustawić język interfejsu uzytkownika. Żeby ustawienie przyniosło skutek trzeba uruchomić ponownie NIKoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -944,8 +944,8 @@ Adres: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show WINCOIN addresses in the transaction list or not.</source>
-        <translation>Pokazuj adresy WINCOIN na liście transakcji.</translation>
+        <source>Whether to show NIKoin addresses in the transaction list or not.</source>
+        <translation>Pokazuj adresy NIKoin na liście transakcji.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -996,8 +996,8 @@ Adres: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting WINCOIN.</source>
-        <translation>To ustawienie zostanie zastosowane po restarcie WINCOIN</translation>
+        <source>This setting will take effect after restarting NIKoin.</source>
+        <translation>To ustawienie zostanie zastosowane po restarcie NIKoin</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1015,8 +1015,8 @@ Adres: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the WINCOIN network after a connection is established, but this process has not completed yet.</source>
-        <translation>Wyświetlana informacja może być nieaktualna. Twój portfel synchronizuje się automatycznie z siecią wincoin, zaraz po tym jak uzyskano połączenie, ale proces ten nie został jeszcze ukończony.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the NIKoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Wyświetlana informacja może być nieaktualna. Twój portfel synchronizuje się automatycznie z siecią nikoin, zaraz po tym jak uzyskano połączenie, ale proces ten nie został jeszcze ukończony.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1069,7 +1069,7 @@ Adres: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start wincoin: click-to-pay handler</source>
+        <source>Cannot start nikoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1219,8 +1219,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the WINCOIN-Qt help message to get a list with possible WINCOIN command-line options.</source>
-        <translation>Pokaż pomoc WINCOIN-Qt, aby zobaczyć listę wszystkich opcji linii poleceń</translation>
+        <source>Show the NIKoin-Qt help message to get a list with possible NIKoin command-line options.</source>
+        <translation>Pokaż pomoc NIKoin-Qt, aby zobaczyć listę wszystkich opcji linii poleceń</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1239,12 +1239,12 @@ Adres: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>WINCOIN - Debug window</source>
-        <translation>WINCOIN - Okno debudowania</translation>
+        <source>NIKoin - Debug window</source>
+        <translation>NIKoin - Okno debudowania</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>WINCOIN Core</source>
+        <source>NIKoin Core</source>
         <translation>Rdzeń BitCoin</translation>
     </message>
     <message>
@@ -1254,7 +1254,7 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the WINCOIN debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the NIKoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1264,8 +1264,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the WINCOIN RPC console.</source>
-        <translation>Witam w konsoli WINCOIN RPC</translation>
+        <source>Welcome to the NIKoin RPC console.</source>
+        <translation>Witam w konsoli NIKoin RPC</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1385,7 +1385,7 @@ Adres: %4
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Błąd: transakcja została odrzucona. Może się to zdarzyć, gdy monety z Twojego portfela zostały już wydane, na przykład gdy używałeś kopii wallet.dat i wincoiny które tam wydałeś nie zostały jeszcze odjęte z portfela z którego teraz korzystasz.</translation>
+        <translation>Błąd: transakcja została odrzucona. Może się to zdarzyć, gdy monety z Twojego portfela zostały już wydane, na przykład gdy używałeś kopii wallet.dat i nikoiny które tam wydałeś nie zostały jeszcze odjęte z portfela z którego teraz korzystasz.</translation>
     </message>
 </context>
 <context>
@@ -1448,8 +1448,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a WINCOIN address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Wprowadź adres WINCOIN (np. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a NIKoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Wprowadź adres NIKoin (np. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
 <context>
@@ -1472,7 +1472,7 @@ Adres: %4
     <message>
         <location line="+18"/>
         <source>The address to sign the message with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Wprowadź adres WINCOIN (np. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <translation>Wprowadź adres NIKoin (np. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1513,7 +1513,7 @@ Adres: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this WINCOIN address</source>
+        <source>Sign the message to prove you own this NIKoin address</source>
         <translation>Podpisz wiadomość aby dowieść, że ten adres jest twój</translation>
     </message>
     <message>
@@ -1545,12 +1545,12 @@ Adres: %4
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Wprowadź adres WINCOIN (np. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <translation>Wprowadź adres NIKoin (np. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified WINCOIN address</source>
-        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana odpowiednim adresem WINCOIN.</translation>
+        <source>Verify the message to ensure it was signed with the specified NIKoin address</source>
+        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana odpowiednim adresem NIKoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1565,8 +1565,8 @@ Adres: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a WINCOIN address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Wprowadź adres WINCOIN (np. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a NIKoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Wprowadź adres NIKoin (np. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1575,8 +1575,8 @@ Adres: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter WINCOIN signature</source>
-        <translation>Wprowadź podpis WINCOIN</translation>
+        <source>Enter NIKoin signature</source>
+        <translation>Wprowadź podpis NIKoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1649,8 +1649,8 @@ Adres: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The WINCOIN developers</source>
-        <translation>Deweloperzy WINCOIN</translation>
+        <source>The NIKoin developers</source>
+        <translation>Deweloperzy NIKoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2187,8 +2187,8 @@ Adres: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>WINCOIN version</source>
-        <translation>Wersja WINCOIN</translation>
+        <source>NIKoin version</source>
+        <translation>Wersja NIKoin</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2197,8 +2197,8 @@ Adres: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or wincoind</source>
-        <translation>Wyślij polecenie do -server lub wincoind</translation>
+        <source>Send command to -server or nikoind</source>
+        <translation>Wyślij polecenie do -server lub nikoind</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2217,13 +2217,13 @@ Adres: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: wincoin.conf)</source>
-        <translation>Wskaż plik konfiguracyjny (domyślnie: wincoin.conf)</translation>
+        <source>Specify configuration file (default: nikoin.conf)</source>
+        <translation>Wskaż plik konfiguracyjny (domyślnie: nikoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: wincoind.pid)</source>
-        <translation>Wskaż plik pid (domyślnie: wincoin.pid)</translation>
+        <source>Specify pid file (default: nikoind.pid)</source>
+        <translation>Wskaż plik pid (domyślnie: nikoin.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2300,24 +2300,24 @@ Adres: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=wincoinrpc
+rpcuser=nikoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;WINCOIN Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;NIKoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, musisz ustawić rpcpassword w pliku konfiguracyjnym:⏎
 %s⏎
 Zalecane jest użycie losowego hasła:⏎
-rpcuser=wincoinrpc⏎
+rpcuser=nikoinrpc⏎
 rpcpassword=%s⏎
 (nie musisz pamiętać tego hasła)⏎
 Użytkownik i hasło nie mogą być takie same.⏎
 Jeśli plik nie istnieje, utwórz go z uprawnieniami tylko-do-odczytu dla właściciela.⏎
 Zalecane jest ustawienie alertnotify aby poinformować o problemach:⏎
-na przykład: alertnotify=echo %%s | mail -s &quot;Alarm WINCOIN&quot; admin@foo.com⏎</translation>
+na przykład: alertnotify=echo %%s | mail -s &quot;Alarm NIKoin&quot; admin@foo.com⏎</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2331,8 +2331,8 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm WINCOIN&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. WINCOIN is probably already running.</source>
-        <translation>Nie można zablokować folderu danych %s.  WINCOIN prawdopodobnie już działa.</translation>
+        <source>Cannot obtain a lock on data directory %s. NIKoin is probably already running.</source>
+        <translation>Nie można zablokować folderu danych %s.  NIKoin prawdopodobnie już działa.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2376,8 +2376,8 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm WINCOIN&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong WINCOIN will not work properly.</source>
-        <translation>Uwaga: Sprawdź czy data i czas na Twoim komputerze są prawidłowe! Jeśli nie to WINCOIN nie będzie działał prawidłowo.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong NIKoin will not work properly.</source>
+        <translation>Uwaga: Sprawdź czy data i czas na Twoim komputerze są prawidłowe! Jeśli nie to NIKoin nie będzie działał prawidłowo.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2626,8 +2626,8 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm WINCOIN&quot; admin@foo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the WINCOIN Wiki for SSL setup instructions)</source>
-        <translation>Opcje SSL: (odwiedź WINCOIN Wiki w celu uzyskania instrukcji)</translation>
+        <source>SSL options: (see the NIKoin Wiki for SSL setup instructions)</source>
+        <translation>Opcje SSL: (odwiedź NIKoin Wiki w celu uzyskania instrukcji)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2816,13 +2816,13 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm WINCOIN&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of WINCOIN</source>
-        <translation>Błąd ładowania wallet.dat: Portfel wymaga nowszej wersji WINCOIN</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of NIKoin</source>
+        <translation>Błąd ładowania wallet.dat: Portfel wymaga nowszej wersji NIKoin</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart WINCOIN to complete</source>
-        <translation>Portfel wymaga przepisania: zrestartuj WINCOINa żeby ukończyć</translation>
+        <source>Wallet needed to be rewritten: restart NIKoin to complete</source>
+        <translation>Portfel wymaga przepisania: zrestartuj NIKoina żeby ukończyć</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2881,8 +2881,8 @@ na przykład: alertnotify=echo %%s | mail -s &quot;Alarm WINCOIN&quot; admin@foo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. WINCOIN is probably already running.</source>
-        <translation>Nie można przywiązać %s na tym komputerze. WINCOIN prawdopodobnie już działa.</translation>
+        <source>Unable to bind to %s on this computer. NIKoin is probably already running.</source>
+        <translation>Nie można przywiązać %s na tym komputerze. NIKoin prawdopodobnie już działa.</translation>
     </message>
     <message>
         <location line="+64"/>

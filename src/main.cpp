@@ -31,8 +31,8 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x2147eab898541b7b9aff0fc3c764e6d668c747ce82a5db5d466a1ad57ec9c91e");
-static CBigNum bnProofOfWorkLimit = CBigNum().SetCompact(504365644); // WINCOIN: starting difficulty is 1 / 2^12
+uint256 hashGenesisBlock("0x2d157227ad3d5579ddc9f943c35540c07466a8c7746f7c292f4c9fa0b3af4ddd");
+static CBigNum bnProofOfWorkLimit = CBigNum().SetCompact(504365644); // NIKoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 uint256 nBestChainWork = 0;
@@ -64,7 +64,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "WINCOIN Signed Message:\n";
+const string strMessageMagic = "NIKoin Signed Message:\n";
 
 double dHashesPerSec = 0.0;
 int64 nHPSTimerStart = 0;
@@ -355,7 +355,7 @@ unsigned int LimitOrphanTxSize(unsigned int nMaxOrphans)
 
 bool CTxOut::IsDust() const
 {
-    // WINCOIN: IsDust() detection disabled, allows any valid dust to be relayed.
+    // NIKoin: IsDust() detection disabled, allows any valid dust to be relayed.
     // The fees imposed on each dust txo is considered sufficient spam deterrant. 
     return false;
 }
@@ -617,7 +617,7 @@ int64 CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
         }
     }
 
-    // WINCOIN
+    // NIKoin
     // To limit dust spam, add nBaseFee for each output less than DUST_SOFT_LIMIT
     BOOST_FOREACH(const CTxOut& txout, vout)
         if (txout.nValue < DUST_SOFT_LIMIT)
@@ -1074,13 +1074,13 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     int64 nSubsidy = 5000000000;
 
     // Subsidy is cut in half every 840000 blocks, which will occur approximately every 4 years
-    nSubsidy >>= (nHeight / 840000); // WINCOIN: 840k blocks in ~4 years
+    nSubsidy >>= (nHeight / 640000); // NIKoin: 840k blocks in ~4 years
 
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 302400; // WINCOIN: 3.5 days
-static const int64 nTargetSpacing = 150; // WINCOIN: 2.5 minutes
+static const int64 nTargetTimespan = 302400; // NIKoin: 3.5 days
+static const int64 nTargetSpacing = 120; // NIKoin: 2.5 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -1139,7 +1139,7 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
         return pindexLast->nBits;
     }
 
-    // WINCOIN: This fixes an issue where a 51% attack can change difficulty at will.
+    // NIKoin: This fixes an issue where a 51% attack can change difficulty at will.
     // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
     int blockstogoback = nInterval-1;
     if ((pindexLast->nHeight+1) != nInterval)
@@ -2085,7 +2085,7 @@ bool CBlock::CheckBlock(CValidationState &state, bool fCheckPOW, bool fCheckMerk
     if (vtx.empty() || vtx.size() > MAX_BLOCK_SIZE || ::GetSerializeSize(*this, SER_NETWORK, PROTOCOL_VERSION) > MAX_BLOCK_SIZE)
         return state.DoS(100, error("CheckBlock() : size limits failed"));
 
-    // WINCOIN: Special short-term limits to avoid 10,000 BDB lock limit:
+    // NIKoin: Special short-term limits to avoid 10,000 BDB lock limit:
     if (GetBlockTime() < 1376568000)  // stop enforcing 15 August 2013 00:00:00
     {
         // Rule is: #unique txids referenced <= 4,500
@@ -2242,7 +2242,7 @@ bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
 
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired, unsigned int nToCheck)
 {
-    // WINCOIN: temporarily disable v2 block lockin until we are ready for v2 transition
+    // NIKoin: temporarily disable v2 block lockin until we are ready for v2 transition
     return false;
     unsigned int nFound = 0;
     for (unsigned int i = 0; i < nToCheck && nFound < nRequired && pstart != NULL; i++)
@@ -2728,7 +2728,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdc;
-        hashGenesisBlock = uint256("0x819cb141a8962386cd3b349787be773e91e5f6fd74c553a312574c332e4c7ad5");
+        hashGenesisBlock = uint256("0xfd51c708fd9125530d6cc91a1c51814c484757f4865cdc8980333ee12311627d");
     }
 
     //
@@ -2761,26 +2761,26 @@ bool InitBlockIndex() {
         //   vMerkleTree: 97ddfbbae6
 
         // Genesis block
-        const char* pszTimestamp = "Wincoin Genesis";
+        const char* pszTimestamp = "NIKoin genesis, may the force be with you.";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 5000000000;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("6a77819f620b4502ae36414face7ecc8bef71f7e10c60d8b4a22e047326249f99518d86a15b09f6d7bbe2fbb1af0d9bcccbaa34eba6cb966123afb7fe18e6acc08") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("d3693029fbc9a3331965fe6939a900b7e6546b3958025cf6396231e267ead1a869b351fdd615a3ad75c26e897d474d0d52e1e33e1e8396ea0fc2f369cf5ef81975") << OP_CHECKSIG;
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1502808367;
+        block.nTime    = 1502903174;
         block.nBits    = 504365644;
-        block.nNonce   = 1773809718;
+        block.nNonce   = 806141273;
 
         if (fTestNet)
         {
-            block.nTime    = 1502808367;
-            block.nNonce   = 510152974;
+            block.nTime    = 1502903174;
+            block.nNonce   = 1519244994;
         }
 
         //// debug print
@@ -2788,7 +2788,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x1b9d04c23c6aaf2d61d95586cd1c6a95cbc087ad13edbe319256434c0c0c377c"));
+        assert(block.hashMerkleRoot == uint256("0x8b892699fce891ccda3814996fa3290844a244005d6b75ff86aa4354456d86d7"));
         block.print();
         assert(hash == hashGenesisBlock);
 
@@ -3061,7 +3061,7 @@ bool static AlreadyHave(const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xfb, 0xc0, 0xb6, 0xdb }; // WINCOIN: increase each by adding 2 to bitcoin's value.
+unsigned char pchMessageStart[4] = { 0xfb, 0xc0, 0xb6, 0xdb }; // NIKoin: increase each by adding 2 to bitcoin's value.
 
 
 void static ProcessGetData(CNode* pfrom)
@@ -4053,7 +4053,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// WINCOINMiner
+// NIKoinMiner
 //
 
 int static FormatHashBlocks(void* pbuffer, unsigned int len)
@@ -4460,7 +4460,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    printf("WINCOIN RPCMiner:\n");
+    printf("NIKoin RPCMiner:\n");
     printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
     printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
@@ -4469,7 +4469,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("WINCOINMiner : generated block is stale");
+            return error("NIKoinMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -4483,7 +4483,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("WINCOINMiner : ProcessBlock, block not accepted");
+            return error("NIKoinMiner : ProcessBlock, block not accepted");
     }
 
     return true;

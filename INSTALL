@@ -1,9 +1,9 @@
-Building WINCOIN
+Building NIKoin
 
-See doc/readme-qt.rst for instructions on building WINCOIN-Qt,
+See doc/readme-qt.rst for instructions on building NIKoin-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of WINCOIN.
+implementation of NIKoin.
 
-See doc/build-*.txt for instructions on building wincoind,
+See doc/build-*.txt for instructions on building nikoind,
 the intended-for-services, no-graphical-interface, reference
-implementation of WINCOIN.
+implementation of NIKoin.
