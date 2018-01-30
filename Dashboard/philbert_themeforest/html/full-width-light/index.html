@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Nikoin | Token Dashboard | Blockchain for Business Applications</title>
+	<meta name="description" content="Nikoin | Token Dashboard | Blockchain for Business Applications" />
+	<meta name="keywords" content="Nikoin is building blockchain for business applications. Working majorly on IoT, Banking, Supply Chain Management, Consumer Loyalty and Governance. Nikoin also runs a state-of-art Mining Farm in India.  />
+		<meta name="author" content="Nikoin"/>
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	
+	<!-- Morris Charts CSS -->
+    <link href="vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css"/>
+	
+	<!-- Data table CSS -->
+	<link href="vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+	
+	<link href="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css" rel="stylesheet" type="text/css">
+		
+	<!-- Custom CSS -->
+	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div class="preloader-it">
+		<div class="la-anim-1"></div>
+	</div>
+	<!-- /Preloader -->
+    <div class="wrapper theme-1-active pimary-color-green">
+		<!-- Top Menu Items -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="mobile-only-brand pull-left">
+				<div class="nav-header pull-left">
+					<div class="logo-wrap">
+						<a href="index.html">
+							<img class="brand-img" src="assets/img/nikoin-n-colour.png" alt="nikoin"/><!-- TODO : get the logo from designer and insert here-->
+							<span class="brand-text">Nikoin</span>
+						</a>
+					</div>
+				</div>	
+				<a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);"><i class="zmdi zmdi-menu"></i></a>
+				<a id="toggle_mobile_nav" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-more"></i></a>
+			</div>
+			<div id="mobile_only_nav" class="mobile-only-nav pull-right">
+				<ul class="nav navbar-right top-nav pull-right">
+					<li class="dropdown alert-drp">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="zmdi zmdi-notifications top-nav-icon"></i><span class="top-nav-icon-badge">5</span></a>
+						<ul  class="dropdown-menu alert-dropdown" data-dropdown-in="bounceIn" data-dropdown-out="bounceOut">
+							<li>
+								<div class="notification-box-head-wrap">
+									<span class="notification-box-head pull-left inline-block">notifications</span>
+									<a class="txt-danger pull-right clear-notifications inline-block" href="javascript:void(0)"> clear all </a>
+									<div class="clearfix"></div>
+									<hr class="light-grey-hr ma-0"/>
+								</div>
+							</li>
+							<li>
+								<div class="streamline message-nicescroll-bar">
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="icon bg-green">
+												<i class="zmdi zmdi-flag"></i>
+											</div>
+											<div class="sl-content">
+												<span class="inline-block capitalize-font  pull-left truncate head-notifications">
+												New subscription created</span>
+												<span class="inline-block font-11  pull-right notifications-time">2pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate">Your customer subscribed for the basic plan. The customer will pay $25 per month.</p>
+											</div>
+										</a>	
+									</div>
+									<hr class="light-grey-hr ma-0"/>
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="icon bg-yellow">
+												<i class="zmdi zmdi-trending-down"></i>
+											</div>
+											<div class="sl-content">
+												<span class="inline-block capitalize-font  pull-left truncate head-notifications txt-warning">Server #2 not responding</span>
+												<span class="inline-block font-11 pull-right notifications-time">1pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate">Some technical error occurred needs to be resolved.</p>
+											</div>
+										</a>	
+									</div>
+									<hr class="light-grey-hr ma-0"/>
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="icon bg-blue">
+												<i class="zmdi zmdi-email"></i>
+											</div>
+											<div class="sl-content">
+												<span class="inline-block capitalize-font  pull-left truncate head-notifications">2 new messages</span>
+												<span class="inline-block font-11  pull-right notifications-time">4pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate"> The last payment for your G Suite Basic subscription failed.</p>
+											</div>
+										</a>	
+									</div>
+									<hr class="light-grey-hr ma-0"/>
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="sl-avatar">
+												<img class="img-responsive" src="dist/img/avatar.jpg" alt="avatar"/>
+											</div>
+											<div class="sl-content">
+												<span class="inline-block capitalize-font  pull-left truncate head-notifications">Sandy Doe</span>
+												<span class="inline-block font-11  pull-right notifications-time">1pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+											</div>
+										</a>	
+									</div>
+									<hr class="light-grey-hr ma-0"/>
+									<div class="sl-item">
+										<a href="javascript:void(0)">
+											<div class="icon bg-red">
+												<i class="zmdi zmdi-storage"></i>
+											</div>
+											<div class="sl-content">
+												<span class="inline-block capitalize-font  pull-left truncate head-notifications txt-danger">99% server space occupied.</span>
+												<span class="inline-block font-11  pull-right notifications-time">1pm</span>
+												<div class="clearfix"></div>
+												<p class="truncate">consectetur, adipisci velit.</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="notification-box-bottom-wrap">
+									<hr class="light-grey-hr ma-0"/>
+									<a class="block text-center read-all" href="javascript:void(0)"> read all </a>
+									<div class="clearfix"></div>
+								</div>
+							</li>
+						</ul>
+					</li><!--TODO:add api for notifications-->
+					<li class="dropdown auth-drp">
+						<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="dist/img/user1.png" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
+						<ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+							<li>
+								<a href="profile.html"><i class="zmdi zmdi-account"></i><span>Profile</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="zmdi zmdi-card"></i><span>My balance</span></a>
+							</li>
+							<li>
+								<a href="#"><i class="zmdi zmdi-settings"></i><span>Edit Profile</span></a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="#"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>	
+		</nav>
+		<!-- /Top Menu Items -->
+		
+		<!-- Left Sidebar Menu -->
+		<div class="fixed-sidebar-left">
+			<ul class="nav navbar-nav side-nav nicescroll-bar">
+				<li class="navigation-header">
+					<span>Main Menu</span>
+					<i class="zmdi zmdi-more"></i>
+				</li>
+				<li>
+					<a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><!--TODO:hyperlink well--><div class="pull-left"><i class="zmdi zmdi-landscape mr-20"></i><span class="right-nav-text">Dashboard</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><!--TODO:hyperlink well--><div class="pull-left"><i class="zmdi zmdi-accounts-add mr-20"></i><span class="right-nav-text">Referrals</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
+				</li>
+				<li><hr class="light-grey-hr mb-10"/></li>
+				<li class="navigation-header">
+					<span>Resources</span>
+					<i class="zmdi zmdi-more"></i>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><!--TODO:hyperlink well--><div class="pull-left"><i class="zmdi zmdi-code mr-20"></i><span class="right-nav-text">Documentation</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><!--TODO:hyperlink well--><div class="pull-left"><i class="zmdi zmdi-money mr-20"></i><span class="right-nav-text">AML</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><!--TODO:hyperlink well--><div class="pull-left"><i class="zmdi zmdi-male mr-20"></i><span class="right-nav-text">Privacy Policy</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><!--TODO:hyperlink well--><div class="pull-left"><i class="zmdi zmdi-comment-more mr-20"></i><span class="right-nav-text">Terms & Conditions</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
+				</li>
+				<li><hr class="light-grey-hr mb-10"/></li>
+				<li class="navigation-header">
+					<span>Help & Support</span>
+					<i class="zmdi zmdi-more"></i>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><!--TODO:hyperlink well--><div class="pull-left"><i class="zmdi zmdi-mood mr-20"></i><span class="right-nav-text">Help & Support</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><!--TODO:hyperlink well--><div class="pull-left"><i class="zmdi zmdi-comments mr-20"></i><span class="right-nav-text">Contact Us</span></div><div class="pull-right"></div><div class="clearfix"></div></a>
+				</li>
+			</ul>
+		</div>
+		<!-- /Left Sidebar Menu -->
+        <!-- Main Content -->
+		<div class="page-wrapper">
+            <div class="container-fluid pt-25">
+				<!-- Row -->
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="panel panel-default card-view pa-0">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body pa-0">
+									<div class="sm-data-box">
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-xs-6 text-center pl-0 pr-0 data-wrap-left">
+													<span class="txt-dark block counter"><span class="counter-anim">100,000<!--API from total niks--></span></span>
+													<span class="weight-500 uppercase-font block font-13">Total Niks</span>
+												</div>
+												<div class="col-xs-6 text-center  pl-0 pr-0 data-wrap-right">
+													<i class="icon-wallet data-right-rep-icon txt-light-grey"></i>
+												</div>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="panel panel-default card-view pa-0">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body pa-0">
+									<div class="sm-data-box">
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-xs-6 text-center pl-0 pr-0 data-wrap-left">
+													<span class="txt-dark block counter"><span class="counter-anim">1,253<!--API from Credited niks--></span></span>
+													<span class="weight-500 uppercase-font block">Niks Credited</span>
+												</div>
+												<div class="col-xs-6 text-center  pl-0 pr-0 data-wrap-right">
+													<i class="icon-energy data-right-rep-icon txt-light-grey"></i>
+												</div>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="panel panel-default card-view pa-0">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body pa-0">
+									<div class="sm-data-box">
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-xs-6 text-center pl-0 pr-0 data-wrap-left">
+													<span class="txt-dark block counter"><span class="counter-anim">1,001<!--TODO:reward API--></span></span>
+													<span class="weight-500 uppercase-font block">Total Rewards</span>
+												</div>
+												<div class="col-xs-6 text-center  pl-0 pr-0 data-wrap-right">
+													<i class="icon-layers data-right-rep-icon txt-light-grey"></i>
+												</div>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="panel panel-default card-view pa-0">
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body pa-0">
+									<div class="sm-data-box">
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-xs-6 text-center pl-0 pr-0 data-wrap-left">
+													<span class="txt-dark block counter"><span class="counter-anim">46.43</span>%</span>
+													<span class="weight-500 uppercase-font block">Growth Rate</span>
+												</div>
+												<div class="col-xs-6 text-center  pl-0 pr-0 pt-25  data-wrap-right">
+													<div id="sparkline_4" style="width: 100px; overflow: hidden; margin: 0px auto;"></div><!--TODO:growth and charting API-->
+												</div>
+											</div>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Row -->
+				
+				<!-- Row -->
+				<div class="row">
+						<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel panel-default card-view">
+							<div class="panel-heading">
+								<div class="pull-left">
+									<h6 class="panel-title txt-dark">Nikoin Price Chart</h6>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="panel-wrapper collapse in">
+                                <div class="panel-body">
+									<div id="area_chart" class="morris-chart" style="height:293px;"></div><!--TODO:CHARTING API-->
+									<ul class="flex-stat mt-40">
+										<li>
+											<span class="block">Week</span>
+											<span class="block txt-dark weight-500 font-18"><span class="counter-anim">20</span>&percnt;<!--TODO:weekly gain api, colour to change +/---></span></span>
+										</li>
+										<li>
+											<span class="block">Month</span>
+											<span class="block txt-dark weight-500 font-18"><span class="counter-anim">93</span>&percnt;<!--TODO:monthly gain API, colour to change +/---></span></span>
+										</li>
+										<li>
+											<span class="block">Trend</span>
+											<span class="block">
+												<i class="zmdi zmdi-trending-up txt-success font-24"><!--todo:should chnage with ongoing trend--></i>
+											</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+                        </div>
+                    </div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+						<div class="panel panel-default card-view">
+							<div class="panel-wrapper collapse in">
+                                <div class="panel-body sm-data-box-1">
+									<span class="uppercase-font weight-500 font-14 block text-center txt-dark">Nikoin Today</span>
+									<div class="cus-sat-stat weight-500 txt-success text-center mt-5">
+										<span class="counter-anim">12.21</span><span>&nbsp;INR</span>
+									</div>
+									<div class="progress-anim mt-20">
+										<div class="progress">
+											<div class="progress-bar progress-bar-success wow animated progress-animated" role="progressbar" aria-valuenow="93.12" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</div>
+									<ul class="flex-stat mt-5">
+										<li>
+											<span class="block">Previous</span>
+											<span class="block txt-dark weight-500 font-15">10.01</span>
+										</li>
+										<li>
+											<span class="block">% Change</span>
+											<span class="block txt-dark weight-500 font-15">+14.29</span>
+										</li>
+										<li>
+											<span class="block">Trend</span>
+											<span class="block">
+												<i class="zmdi zmdi-trending-up txt-success font-20"></i>
+											</span>
+										</li>
+									</ul>
+								</div>
+                            </div>
+                        </div>
+						<div class="panel panel-default card-view">
+							<div class="panel-heading">
+								<div class="pull-left">
+									<h6 class="panel-title txt-dark">Conversion Rates</h6>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body">
+									<div>
+										<span class="pull-left inline-block capitalize-font txt-dark">
+											NIK/BTC
+										</span>
+										<span class="block txt-dark weight-500 font-15 pull-right">0.0011<!--todo:nik/btc api, colour coded--></span>
+										<div class="clearfix"></div>
+										<hr class="light-grey-hr row mt-10 mb-10"/>
+										<span class="pull-left inline-block capitalize-font txt-dark">
+											NIK/ETH
+										</span>
+										<span class="block txt-dark weight-500 font-15 pull-right">0.7820<!--todo:nik/eth api--></span>
+										<div class="clearfix"></div>
+										<hr class="light-grey-hr row mt-10 mb-10"/>
+										<span class="pull-left inline-block capitalize-font txt-dark">
+											NIK/USD
+										</span>
+										<span class="block txt-dark weight-500 font-15 pull-right">139.9<!--todo:nik/usd api--></span>
+										<div class="clearfix"></div>
+										<hr class="light-grey-hr row mt-10 mb-10"/>
+										<span class="pull-left inline-block capitalize-font txt-dark">
+											NIK/INR
+										</span>
+										<span class="block txt-dark weight-500 font-15 pull-right">1,000<!--todo:nik/inr api--></span>
+										<div class="clearfix"></div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                       <div class="panel panel-default card-view panel-refresh">
+							<div class="refresh-container">
+								<div class="la-anim-1"></div>
+							</div>
+							<div class="panel-heading">
+								<div class="pull-left">
+									<h6 class="panel-title txt-dark">Profit Analysis</h6>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body">
+									<div>
+										<canvas id="chart_6" height="191"></canvas>
+									</div>	
+									<hr class="light-grey-hr row mt-10 mb-15"/>
+									<div class="label-chatrs">
+										<div class="">
+											<span class="clabels clabels-lg inline-block bg-blue mr-10 pull-left"></span>
+											<span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">44.46% Credit</span><span class="block txt-grey">444 NIK</span></span>
+											<div id="sparkline_1" class="pull-right" style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<hr class="light-grey-hr row mt-10 mb-15"/>
+									<div class="label-chatrs">
+										<div class="">
+											<span class="clabels clabels-lg inline-block bg-green mr-10 pull-left"></span>
+											<span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">5.54% Refrral</span><span class="block txt-grey">56 NIK</span></span>
+											<div id="sparkline_2" class="pull-right" style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<hr class="light-grey-hr row mt-10 mb-15"/>
+									<div class="label-chatrs">
+										<div class="">
+											<span class="clabels clabels-lg inline-block bg-yellow mr-10 pull-left"></span>
+											<span class="clabels-text font-12 inline-block txt-dark capitalize-font pull-left"><span class="block font-15 weight-500 mb-5">50% Rewards</span><span class="block txt-grey">500 NIK</span></span>
+											<div id="sparkline_3" class="pull-right" style="width: 100px; overflow: hidden; margin: 0px auto;"></div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Row -->
+				
+				<!-- Row -->
+				<div class="row">
+					<div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+						<div class="panel panel-default card-view panel-refresh">
+							<div class="refresh-container">
+								<div class="la-anim-1"></div>
+							</div>
+							<div class="panel-heading">
+								<div class="pull-left">
+									<h6 class="panel-title txt-dark">Referrals</h6>
+								</div>
+								<div class="pull-right">
+									<a href="#" class="pull-left inline-block refresh mr-15">
+										<i class="zmdi zmdi-replay"></i>
+									</a>
+									<a href="#" class="pull-left inline-block full-screen mr-15">
+										<i class="zmdi zmdi-fullscreen"></i>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body row pa-0">
+									<div class="table-wrap">
+										<div class="table-responsive">
+											<table class="table table-hover mb-0">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>User Name</th>
+														<th>Amount</th>
+														<th>NIK</th>
+														<th>Reward</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><span class="txt-dark weight-500">Madhav</span></td><!--todo:data from ref name api-->
+														<td>mv@nk.com</td>
+														<td><span class="txt-success"><span>$300</span></span></td>
+														<td>
+															<span class="txt-dark weight-500">1478</span>
+														</td>
+														<td>
+															<span class="label label-primary">15</span>
+														</td>
+													</tr>
+													<tr>
+														<td><span class="txt-dark weight-500">Swati</span></td>
+														<td>sp@mv.com</td>
+														<td><span class="txt-success"></i><span>$143</span></span></td>
+														<td>
+															<span class="txt-dark weight-500">7801</span>
+														</td>
+														<td>
+															<span class="label label-danger">162</span>
+														</td>
+													</tr>
+													<tr>
+														<td><span class="txt-dark weight-500">Rima</span></td>
+														<td>rm@mv.com</td>
+														<td><span class="txt-danger"><span>$593</span></span></td>
+														<td>
+															<span class="txt-dark weight-500">7456</span>
+														</td>
+														<td>
+															<span class="label label-default">373</span>
+														</td>
+													</tr>
+													<tr>
+														<td><span class="txt-dark weight-500">Kaavya</span></td>
+														<td>ks@mv.com</td>
+														<td><span class="txt-success"><span>$8762</span></span></td>
+														<td>
+															<span class="txt-dark weight-500">837</span>
+														</td>
+														<td>
+															<span class="label label-default">78</span>
+														</td>
+													</tr>
+													<tr>
+														<td><span class="txt-dark weight-500">Tejinder</span></td>
+														<td>tj@mv.com</td>
+														<td><span class="txt-success"><span>$1981</span></span></td>
+														<td>
+															<span class="txt-dark weight-500">123</span>
+														</td>
+														<td>
+															<span class="label label-primary">234</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>	
+								</div>	
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+						<div class="panel panel-default card-view panel-refresh">
+							<div class="refresh-container">
+								<div class="la-anim-1"></div>
+							</div>
+							<div class="panel-heading">
+								<div class="pull-left">
+									<h6 class="panel-title txt-dark">Advertising & Promotions</h6>
+								</div>
+								<div class="pull-right">
+									<a href="#" class="pull-left inline-block refresh mr-15">
+										<i class="zmdi zmdi-replay"></i>
+									</a>
+									<div class="pull-left inline-block dropdown">
+										<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi zmdi-more-vert"></i></a>
+										<ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">
+											<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>option 1</a></li>
+											<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>option 2</a></li>
+											<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>option 3</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="panel-wrapper collapse in">
+								<div class="panel-body">
+									<div>
+										<canvas id="chart_2" height="253"></canvas>
+									</div>	
+									<div class="label-chatrs mt-30">
+										<div class="inline-block mr-15">
+											<span class="clabels inline-block bg-yellow mr-5"></span>
+											<span class="clabels-text font-12 inline-block txt-dark capitalize-font">Active</span>
+										</div>
+										<div class="inline-block mr-15">
+											<span class="clabels inline-block bg-blue mr-5"></span>
+											<span class="clabels-text font-12 inline-block txt-dark capitalize-font">Closed</span>
+										</div>	
+										<div class="inline-block">
+											<span class="clabels inline-block bg-green mr-5"></span>
+											<span class="clabels-text font-12 inline-block txt-dark capitalize-font">Hold</span>
+										</div>											
+									</div>
+								</div>
+							</div>	
+						</div>	
+					</div>	
+				</div>	
+				<!-- Row -->
+			</div>
+			
+			<!-- Footer -->
+			<footer class="footer container-fluid pl-30 pr-30">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>2017 &copy; Philbert. Pampered by Hencework</p>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+			
+		</div>
+        <!-- /Main Content -->
+
+    </div>
+    <!-- /#wrapper -->
+	
+	<!-- JavaScript -->
+	
+    <!-- jQuery -->
+    <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+	<!-- Data table JavaScript -->
+	<script src="vendors/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+	
+	<!-- Slimscroll JavaScript -->
+	<script src="dist/js/jquery.slimscroll.js"></script>
+	
+	<!-- simpleWeather JavaScript -->
+	<script src="vendors/bower_components/moment/min/moment.min.js"></script>
+	<script src="vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+	<script src="dist/js/simpleweather-data.js"></script>
+	
+	<!-- Progressbar Animation JavaScript -->
+	<script src="vendors/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+	<script src="vendors/bower_components/jquery.counterup/jquery.counterup.min.js"></script>
+	
+	<!-- Fancy Dropdown JS -->
+	<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+	
+	<!-- Sparkline JavaScript -->
+	<script src="vendors/jquery.sparkline/dist/jquery.sparkline.min.js"></script>
+	
+	<!-- Owl JavaScript -->
+	<script src="vendors/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+	
+	<!-- ChartJS JavaScript -->
+	<script src="vendors/chart.js/Chart.min.js"></script>
+	
+	<!-- Morris Charts JavaScript -->
+    <script src="vendors/bower_components/raphael/raphael.min.js"></script>
+    <script src="vendors/bower_components/morris.js/morris.min.js"></script>
+    <script src="vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
+	
+	<!-- Switchery JavaScript -->
+	<script src="vendors/bower_components/switchery/dist/switchery.min.js"></script>
+	
+	<!-- Init JavaScript -->
+	<script src="dist/js/init.js"></script>
+	<script src="dist/js/dashboard-data.js"></script>
+</body>
+
+</html>
